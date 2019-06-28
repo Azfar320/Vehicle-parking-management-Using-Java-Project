@@ -1,0 +1,66 @@
+
+Login Table:
+
+CREATE TABLE Login (
+    		Username VARCHAR(100) NOT NULL,
+    		Password VARCHAR(100) NOT NULL,
+    		PRIMARY KEY(Username, Password)
+)
+
+
+
+
+Parking Table:
+
+
+CREATE TABLE Parking (
+
+    parking_01 VARCHAR (100),
+    parking_02 VARCHAR (100),
+    parking_03 VARCHAR (100),
+    parking_04 VARCHAR (100),
+    parking_05 VARCHAR (100),
+    parking_06 VARCHAR (100),
+    parking_07 VARCHAR (100),
+    parking_08 VARCHAR (100),
+    parking_09 VARCHAR (100),
+    parking_10 VARCHAR (100)
+)
+
+
+
+
+Vehicle Check In/Out TABLE:
+
+
+CREATE TABLE Vehicle_Check_In_Out (
+    
+    Vehicle_Id VARCHAR (100) NOT NULL,
+    Vehicle_Type VARCHAR (20),
+    Token_No VARCHAR (20) NOT NULL,
+    Parking INTEGER NOT NULL,
+    Driver VARCHAR (20),
+    Entrance_Date VARCHAR (50),
+    Entrance_Time VARCHAR (50),
+    Exit_Date VARCHAR (50),
+    Exit_Time VARCHAR (50),
+    PRIMARY KEY(Vehicle_Id, Token_No, Parking)
+    
+)
+
+
+
+
+Vehicle Parking Details Table:
+
+CREATE TABLE Vehicle_Parking_Details(
+    
+    Vehicle_Id VARCHAR (50) PRIMARY KEY NOT NULL,
+    Vehicle_Type VARCHAR (20),
+    Token_No VARCHAR (20) NOT NULL,
+    Parking INTEGER NOT NULL,
+    Driver VARCHAR (20),
+    Entrance_Date VARCHAR (30),
+    Entrance_Time VARCHAR (30)
+    
+)
